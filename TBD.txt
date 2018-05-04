@@ -1,0 +1,81 @@
+worm
+  windows shell extension
+  screen shot
+  key logger
+  server in python
+
+user mode hooks in windows 
+  CreateRemoteThread
+
+DNS client/server with raw sockets
+
+linux kernel module
+  key logger?
+
+linux write directly into frame buffer
+  block device
+  http://seenaburns.com/2018/04/04/writing-to-the-framebuffer/
+
+windows driver
+
+cracking with IDA
+  ftpeditor
+  flac2mp3
+
+anti-cracking
+  string obfuscation
+  hashing of module
+
+anti-anti-cracking
+  run-time binary patch
+
+minimal webgl
+  3d modelling with kawaiigl
+  3d modelling with blender?
+
+writing a turtle parser in javascript
+
+assembly 
+   guess num
+   graphics with drd
+
+list solve number sliding-tile game
+
+encrypthon rot13
+  cracking using letters statistics
+encryption using python
+  show need for CBC using an image - numpy image
+
+public/private key signing
+
+C multi threading
+  atomic intrinsics
+
+python internals
+  string object manipulation
+
+something with emscripten
+  webasm?
+
+simple socket chat client - server
+  multiple clients, server
+  "hack me" server
+
+REST client that connects to twilio, send sms
+
+html scraping with bsoup
+  scraping wikipedia
+  steps towards phylosophy
+
+stenography into image
+
+arp cache poison?
+
+cinema tickets?
+
+heartbleed?
+
+
+something raspberry-pi
+
+something with arduino

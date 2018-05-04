@@ -1,0 +1,84 @@
+<html>
+<head>
+<script>
+var message = 'A "Hello, world!" program is a computer program that outputs "Hello, World!" (or some variant thereof) on a display device. Because it is typically one of the simplest programs possible in most programming languages, it is by tradition often used to illustrate to beginners the most basic syntax of a programming language. It is also used to verify that a language or system is operating correctly.'
+var ctx, canvas
+function getData(id) {
+    img = document.getElementById(id)
+
+    canvas = document.getElementById("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+    data = ctx.getImageData(0, 0, canvas.width, canvas.height)
+    return data
+}
+
+function encode() {
+    data = getData("img1")
+    arr = data.data
+    
+    var textIndex = 0
+    var writingByte = message.charCodeAt(textIndex)
+    var shift = 0
+    
+    for(var i = 0; i < arr.length; ++i) {
+        var b = arr[i]
+        if ( (i % 4) != 3) { // skip alpha channel
+            bit = (writingByte >> shift) & 0x01
+            b &= 0xFE
+            b |= bit
+            
+            shift += 1
+            if (shift == 8) {
+                textIndex += 1
+                if (textIndex >= message.length)
+                    writingByte = 0
+                else
+                    writingByte = message.charCodeAt(textIndex)
+                shift = 0
+            }
+        }
+        arr[i] = b
+    }
+    ctx.putImageData(data, 0, 0)
+    
+    var dataURL = canvas.toDataURL("image/png");
+    resimg = document.getElementById("img2")
+    resimg.src = dataURL 
+}
+
+function decode() {
+    data = getData("img2")
+    arr = data.data
+
+    var shift = 0
+    var text = ""
+    var buildingByte = 0
+    for(var i = 0; i < arr.length; ++i) {
+        var b = arr[i]
+        if ( (i % 4) != 3) {
+            bit = b & 0x01
+            buildingByte |= bit << shift
+            shift += 1
+            if (shift == 8) {
+                text = text + String.fromCharCode(buildingByte)
+                shift = 0
+                buildingByte = 0
+            }
+        }
+    }
+    
+    document.getElementById("txt").innerHTML = text
+}
+</script>
+</head>
+<body>
+<img id="img1" src="timg1.jpg" onclick=encode()>
+<canvas id="canvas"></canvas>
+<img id="img2" style="border: solid red 2px;" onclick=decode()>
+<div id="txt"></div>
+</body>
+</html>
