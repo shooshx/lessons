@@ -69,6 +69,11 @@ html scraping with bsoup
 
 stenography into image
 
+Android
+  make an application
+  reverse an application
+  patch?
+
 arp cache poison?
 
 cinema tickets?
