@@ -1,11 +1,27 @@
+base conversions
+
+hello world program in c#, python, c, c++, win32, linux
+    prints hello world
+    open, read from file
+    message box
+
+user mode hooks in windows 
+  CreateRemoteThread
+
+client server chat in python
+
+http server in python
+
 worm
   windows shell extension
   screen shot
   key logger
   server in python
 
-user mode hooks in windows 
-  CreateRemoteThread
+minimal win32 window program
+  with setlong
+
+something with dlls?
 
 DNS client/server with raw sockets
 
@@ -17,6 +33,12 @@ linux write directly into frame buffer
   http://seenaburns.com/2018/04/04/writing-to-the-framebuffer/
 
 windows driver
+
+encoding, language identify using ngrams
+
+arduino - communication IR, like morse code
+
+browser extension
 
 cracking with IDA
   ftpeditor
