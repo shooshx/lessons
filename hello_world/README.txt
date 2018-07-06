@@ -18,3 +18,6 @@ C - Don't start with empty project since it would not make it a console project
     meaning of configurations Debug/Release
     possible bug returning after fopen
     if console disappears, Linker->System to Console
+C++ - what does binary do
+      difference between endl and \n
+win32 - ansi vs wide
