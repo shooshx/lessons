@@ -6,6 +6,7 @@ return code from the program, show %errorlevel% in cmd
 install Visual Studio Community
 install PyCharm
 
+
 for each language:
 - where do these function come from?
 - who implemented them?
@@ -21,3 +22,10 @@ C - Don't start with empty project since it would not make it a console project
 C++ - what does binary do
       difference between endl and \n
 win32 - ansi vs wide
+linux
+   install Oracle VirtualBox
+   download ubuntu image
+    - git
+    - build-essential
+    - libsdl1.2-dev
+python - difference between 2 and 3
