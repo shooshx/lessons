@@ -3,4 +3,5 @@ lesson 1:
    base_convert
 lesson 2:
    hello worlds
-   
+lesson 3:
+   socket chat
