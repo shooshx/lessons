@@ -1,3 +1,4 @@
+---------------- DONE ------------------
 base conversions
 
 hello world program in c#, python, c, c++, win32, linux
@@ -5,10 +6,12 @@ hello world program in c#, python, c, c++, win32, linux
     open, read from file
     message box
 
+client server chat in python
+
+-----------------------------------------    
 user mode hooks in windows 
   CreateRemoteThread
 
-client server chat in python
 
 http server in python
 
@@ -22,6 +25,7 @@ minimal win32 window program
   with setlong
 
 something with dlls?
+  CreateRemoteThread
 
 DNS client/server with raw sockets
 
