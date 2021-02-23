@@ -8,10 +8,17 @@ hello world program in c#, python, c, c++, win32, linux
 
 client server chat in python
 
------------------------------------------    
 user mode hooks in windows 
   CreateRemoteThread
+  something with dlls?
 
+linux kernel module
+  rooter
+
+-----------------------------------------    
+
+Spactra demo?
+shachar crackme
 
 http server in python
 
@@ -24,13 +31,15 @@ worm
 minimal win32 window program
   with setlong
 
-something with dlls?
-  CreateRemoteThread
+
+proxy to change images? text of wikipedia
+  https://github.com/inaz2/proxy2/blob/master/proxy2.py
+
+hidden api window GetProcessInformation
 
 DNS client/server with raw sockets
 
-linux kernel module
-  key logger?
+
 
 linux write directly into frame buffer
   block device
@@ -43,6 +52,8 @@ encoding, language identify using ngrams
 arduino - communication IR, like morse code
 
 browser extension
+
+wikipedia scraping - longest chain to phylosophy
 
 cracking with IDA
   ftpeditor
@@ -83,9 +94,7 @@ python internals
 something with emscripten
   webasm?
 
-simple socket chat client - server
-  multiple clients, server
-  "hack me" server
+"hack me" server
 
 REST client that connects to twilio, send sms
 

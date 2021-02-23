@@ -19,8 +19,9 @@ C - Don't start with empty project since it would not make it a console project
     meaning of configurations Debug/Release
     possible bug returning after fopen
     if console disappears, Linker->System to Console
-C++ - what does binary do
+C++ - what does binary do (open file)
       difference between endl and \n
+      how vtable works
 win32 - ansi vs wide
 linux
    install Oracle VirtualBox
@@ -29,3 +30,6 @@ linux
     - build-essential
     - libsdl1.2-dev
 python - difference between 2 and 3
+
+open stuff in IDA!
+show in release/debug
