@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<script>
+
+
+function updateImg() {
+    var img = document.getElementById("showScreen")
+    img.src = "/lastimage.png" + new Date().getTime();
+    
+    var keys = document.getElementById("showKeys")
+    keys.src = "/keys.txt" + new Date().getTime() + ".html";
+    
+    setTimeout(updateImg, 1000)   
+}
+
+
+
+</script>
+<body onload="updateImg()">
+<h2>Keys:</h2>
+<iframe id="showKeys" style="width:800px; height:100px;"></iframe>
+<h2>Screen:</h2>
+<img id="showScreen">
+</body>
+
+</html>
